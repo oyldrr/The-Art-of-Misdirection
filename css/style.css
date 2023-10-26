@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Yusei Magic', sans-serif;
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: linear-gradient(62deg, rgba(57, 62, 70, 1) 17%, rgba(34, 40, 49, 1) 100%);
+    color: #EEEEEE;
+}
+
+section {
+    padding-bottom: 3rem;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #222831;
+    width: 100%;
+    height: 5rem;
+    min-height: 75px;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    justify-content: left;
+    
+    margin-left: 1rem;
+}
+
+.nav-logo img {
+    width: 250px;
+}
+
+.nav-links {
+    justify-content: right;
+    margin-top: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #c6c6c6;
+    font-size: larger;
+    font-weight: 600;
+    margin-right: 3rem;
+    transition: ease-in-out all .1s;
+}
+
+.active {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+/* Index Page */
+.introduction {
+    margin-top: -1rem;
+
+    background-image: url("../assets/img/introduction.jpg");
+    filter: grayscale(50%) contrast(100%) invert(10%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 50vh;
+    min-height: fit-content;
+
+    width: 100%;
+
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+
+}
+
+.introduction * {
+    width: 80%;
+}
+
+
+.reason {
+    padding: 3rem;
+    display: flex;
+    float: right;
+}
+
+.reason-img img {
+    width: fit-content;
+}
+
+/* History Page */ 
+#introduction {
+    background-image: url("../assets/img/HistoryOfMagic.jpeg");
+    padding: 3rem;
+    width: 100%;
+    margin: auto;
+}
+
+.timeline {
+    width: 80%;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.text-container {
+    margin-right: 2rem;
+}
+
+.image-container img {
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px #48abe0;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+
+footer {
+    margin-top: 3rem;
+
+    padding: 1rem;
+
+    width: 100%;
+    height: 15rem;
+
+    background: linear-gradient(186deg, rgba(34, 40, 49, 1) 44%, rgba(57, 62, 70, 1) 100%);
+
+}
