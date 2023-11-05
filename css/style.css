@@ -17,10 +17,26 @@ body {
     color: #EEEEEE;
 }
 
+h1,
+h2,
+h3 {
+    color: #ffffff;
+}
+
 section {
     padding-bottom: 3rem;
 }
 
+.right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Navbar Styling */
 .navbar {
     position: sticky;
     top: 0;
@@ -35,7 +51,7 @@ section {
 
 .navbar-logo {
     justify-content: left;
-    
+
     margin-left: 1rem;
 }
 
@@ -95,19 +111,63 @@ section {
 .reason {
     padding: 3rem;
     display: flex;
-    float: right;
+    align-items: center;
+    justify-content: center;
 }
 
 .reason-img img {
     width: fit-content;
 }
 
-/* History Page */ 
+#table {
+    margin-top: 3rem;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+th {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: large;
+}
+
+table {
+    border: 5px solid ;
+}
+
+th,
+td {
+    border: 2px solid;
+    padding: 2rem;
+}
+
+/* History Page */
 #introduction {
     background-image: url("../assets/img/HistoryOfMagic.jpeg");
     padding: 3rem;
     width: 100%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.introduction-container {
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+    width: 70%;
+}
+
+.content-list li a {
+    text-decoration: none;
+    color: #c6c6c6;
+    font-size: large;
+}
+
+.content-list li a:hover {
+    color: #48abe0;
 }
 
 .timeline {
@@ -129,17 +189,154 @@ section {
     box-shadow: 0 0 10px 1px #48abe0;
     max-width: 300px;
     min-width: 100px;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+.image-container img:hover {
+    opacity: .7;
 }
 
 
-footer {
-    margin-top: 3rem;
+/* Contact Page */
+#contact {
+    width: 80%;
 
+    min-height: 77.5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    font-size: larger;
+
+}
+
+.contact-container {
+    margin-right: 3rem;
+}
+
+.contact-container li a {
+    text-decoration: none;
+    color: #48abe0;
+
+    transition: all ease-in-out .3s;
+}
+
+.contact-container li a:hover {
+    color: #c6c6c6;
+}
+
+.contact-container ul {
+    margin-top: 1rem;
+}
+
+.contact-image-container img {
+    border-radius: 15px;
+    width: 300px;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+.contact-image-container img:hover {
+    opacity: .7;
+}
+
+/* Legends Page */
+.legends-container {
+    margin-top: 5rem;
+    min-height: 60vh;
+}
+
+.cards-container {
+    width: 80%;
+    padding-top: 3rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: auto;
+
+    width: fit-content;
+    background-color: white;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.card:hover {
+    opacity: .7;
+}
+
+.card img {
+    width: 150px;
+    max-height: 180px;
+    border-radius: 15px 15px 0 0;
+}
+
+.card h3 {
+    font-size: 15px;
+    text-align: center;
+    color: #222831;
+    padding-bottom: 1rem;
+}
+
+/* Go to top */
+.goTop {
+    position: fixed;
+    right: 3rem;
+    bottom: 0rem;
+    font-size: xx-large;
+    margin: 1rem;
+
+    background-color: #222831;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.goTop a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.goTop:hover {
+    bottom: 1.5rem;
+    opacity: .7;
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 1rem;
 
+
     width: 100%;
-    height: 15rem;
 
     background: linear-gradient(186deg, rgba(34, 40, 49, 1) 44%, rgba(57, 62, 70, 1) 100%);
 
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    #table {
+        display: none;
+    }
 }
