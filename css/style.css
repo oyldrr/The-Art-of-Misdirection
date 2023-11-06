@@ -107,6 +107,26 @@ section {
     width: 80%;
 }
 
+.greetingButton {
+    width: 10%;
+    margin-top: 1rem;
+    padding: .3rem;
+    font-weight: thin;
+    font-size: normal;
+    border: none;
+    background: #48abe0;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    transition: all ease-in-out .3s;
+}
+
+.greetingButton:hover {
+    opacity: .7;
+    letter-spacing: 1px;
+}
+
 
 .reason {
     padding: 3rem;

@@ -8,6 +8,7 @@
 
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="js/script.js"></script>
 </head>
 
@@ -15,7 +16,8 @@
     <header>
         <nav class="navbar">
             <div class="navbar-logo">
-                <a class="nav-logo" href="index.html"><img src="assets/img/logo-with-text.png" alt="TheArtOfMisdirection"></a>
+                <a class="nav-logo" href="index.html"><img src="assets/img/logo-with-text.png"
+                        alt="TheArtOfMisdirection"></a>
             </div>
 
             <div class="nav-links">
@@ -31,9 +33,10 @@
         <div class="contact-container">
             <h1>Contact me!</h1>
 
-            <p> If you have any question or suggestion please get contact with me. 
+            <p> If you have any question or suggestion please get contact with me.
                 <br>
-                Here are some information about me:</p>
+                Here are some information about me:
+            </p>
 
             <ul>
                 <li>
@@ -49,6 +52,31 @@
         </div>
         <div class="contact-image-container">
             <img src="assets/img/oguzhan.jpg" alt="Oğuzhan Yıldırır">
+        </div>
+    </section>
+
+    <section id="form">
+        <div class="form-container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <div class="form-gender">
+                    <label>Gender:</label>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female">
+
+                </div>
+                <div class="form-newsletter">
+                    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                    <label for="subscribe">I accept the user agreement and privacy policy</label>
+                </div>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
         </div>
     </section>
 
