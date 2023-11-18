@@ -10,47 +10,50 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <script src="js/script.js"></script>
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-logo">
-                <a class="nav-logo" href="index.html"><img src="assets/img/logo-with-text.png"
-                        alt="TheArtOfMisdirection"></a>
+            <div data-aos="fade-in" class="navbar-logo">
+                <a class="nav-logo" href="index.html"><img src="assets/img/logo-with-text.png" alt="TheArtOfMisdirection"></a>
             </div>
 
             <div class="nav-links">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="history.html">History</a>
-                <a class="nav-link" href="legends.html">Legends</a>
-                <a class="nav-link active" href="contact.html">Contact</a>
+                <a data-aos="fade-in" data-aos-delay="100" class="nav-link" href="index.html">Home</a>
+                <a data-aos="fade-in" data-aos-delay="200" class="nav-link" href="history.html">History</a>
+                <a data-aos="fade-in" data-aos-delay="300" class="nav-link" href="legends.html">Legends</a>
+                <a data-aos="fade-in" data-aos-delay="400" class="nav-link active" href="contact.html">Contact</a>
             </div>
         </nav>
     </header>
 
     <section id="contact">
         <div class="contact-container">
-            <h1>Contact me!</h1>
+            <h1 data-aos="fade-in">Contact me!</h1>
 
-            <p> If you have any question or suggestion please get contact with me.
+            <p data-aos="fade-in" data-aos-delay="100"> If you have any question or suggestion please get contact with me.
                 <br>
                 Here are some information about me:
             </p>
 
             <ul>
-                <li>
+                <li data-aos="fade-in" data-aos-delay="100">
                     <b>E-mail:</b> <a href="mailto:oyldrr@hotmail.com" target="_blank">oyldrr@hotmail.com</a>
                 </li>
-                <li>
+                <li data-aos="fade-in" data-aos-delay="200">
                     <b>Instagram:</b> <a href="https://instagram.com/oyldrr" target="_blank">oyldrr</a>
                 </li>
-                <li>
+                <li data-aos="fade-in" data-aos-delay="300">
                     <b>Twitter:</b> <a href="https://twitter.com/oguzhanyildirir" target="_blank">oguzhanyildirir</a>
                 </li>
             </ul>
         </div>
-        <div class="contact-image-container">
+        <div class="contact-image-container" data-aos="fade-in" data-aos-delay="400">
             <img src="assets/img/oguzhan.jpg" alt="Oğuzhan Yıldırır">
         </div>
     </section>
@@ -58,10 +61,10 @@
     <section id="form">
         <div class="form-container">
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label data-aos="flip-up" for="name">Name:</label>
+                <input data-aos="flip-up" data-aos-delay="100" type="text" id="name" name="name" required>
 
-                <div class="form-gender">
+                <div class="form-gender" data-aos="flip-up" data-aos-delay="200">
                     <label>Gender:</label>
                     <label for="male">Male</label>
                     <input type="radio" id="male" name="gender" value="male">
@@ -69,12 +72,12 @@
                     <input type="radio" id="female" name="gender" value="female">
 
                 </div>
-                <div class="form-newsletter">
+                <div class="form-newsletter" data-aos="flip-up" data-aos-delay="300">
                     <input type="checkbox" id="subscribe" name="subscribe" value="yes">
                     <label for="subscribe">I accept the user agreement and privacy policy</label>
                 </div>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" >
                 <input type="reset" value="Reset">
             </form>
         </div>
@@ -91,5 +94,13 @@
         </p>
     </footer>
 </body>
+
+<script>
+    AOS.init();
+
+    AOS.init({
+        duration: 1000
+    });
+</script>
 
 </html>

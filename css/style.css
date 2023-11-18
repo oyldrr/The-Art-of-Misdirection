@@ -184,6 +184,8 @@ td {
     text-decoration: none;
     color: #c6c6c6;
     font-size: large;
+
+    transition: all ease-in-out .3s;
 }
 
 .content-list li a:hover {

@@ -9,42 +9,51 @@
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-logo">
+            <div data-aos="fade-in" class="navbar-logo">
                 <a class="nav-logo" href=""><img src="assets/img/logo-with-text.png" alt="TheArtOfMisdirection"></a>
             </div>
 
             <div class="nav-links">
-                <a class="nav-link active" href="index.html">Home</a>
-                <a class="nav-link" href="history.html">History</a>
-                <a class="nav-link" href="legends.html">Legends</a>
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a data-aos="fade-in" data-aos-delay="100" class="nav-link active" href="index.html">Home</a>
+                <a data-aos="fade-in" data-aos-delay="200" class="nav-link" href="history.html">History</a>
+                <a data-aos="fade-in" data-aos-delay="300" class="nav-link" href="legends.html">Legends</a>
+                <a data-aos="fade-in" data-aos-delay="400" class="nav-link" href="contact.html">Contact</a>
             </div>
         </nav>
     </header>
 
     <section id="introduction">
-        <div class="introduction">
-            <h1>Misdirection?</h1>
+        <div data-aos="fade-in" data-aos-delay="300" class="introduction">
+            <h1 data-aos="fade-up">Misdirection?</h1>
 
-            <p><b>Misdirection</b> is the subtle, deceptive art of directing an audience’s attention towards one thing
-                (a magical effect)</p>
-            <p>so it does not notice another (the method or mechanics of a trick). It can refer to both the effect of a
+            <p data-aos="fade-up" data-aos-delay="100">
+                <b>Misdirection</b> is the subtle, deceptive art of directing an audience’s attention towards one thing
+                (a magical effect)
+            </p>
+            <p data-aos="fade-up" data-aos-delay="200">
+                so it does not notice another (the method or mechanics of a trick). It can refer to both the effect of a
                 spectator’s</p>
-            <p>mind being focused on an unimportant thing, or the action that causes it.</p>
+            <p data-aos="fade-up" data-aos-delay="300">
+                mind being focused on an unimportant thing, or the action that causes it.</p>
 
-            <p>
+            <p data-aos="fade-up" data-aos-delay="400">
                 <br>
                 Jean Eugène Robert-Houdin:
                 <br>
                 <i> "All magic is misdirection."</i>
             </p>
 
-            <button class="greetingButton" onclick="greetGuest()">Click here!</button>
+            <button data-aos="fade-up" data-aos-delay="500" class="greetingButton" onclick="greetGuest()">Click
+                here!</button>
         </div>
     </section>
 
@@ -53,35 +62,38 @@
     <section id="reason">
         <div class="reason">
             <div class="reason-text">
-                <h1>The Reason of Magic</h1>
+                <h1 data-aos="fade-right">The Reason of Magic</h1>
                 <ol>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="100">
                         Escape to Wonder: Magic takes us to a world where anything is possible, away from our everyday
                         lives.
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="200">
                         Childlike Amazement: It brings back the amazement we felt as kids, making us believe in the
                         extraordinary.
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="300">
                         Curiosity and Mystery: The mystery behind magic tricks piques our interest, and we want to know
                         how
                         they work.
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="400" id="aceTrigger">
                         Pure Entertainment: Magic is pure entertainment that leaves us amazed and delighted.
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="500">
                         Shared Moments: Enjoying magic together brings people closer, creating memorable moments.
                     </li>
-                    <li>
+                    <li data-aos="fade-right" data-aos-delay="600">
                         Feeling in Control: The illusion of control and power in magic can be empowering and comforting.
                     </li>
-                    Magic is captivating and universally loved because it offers us these simple, yet enchanting
-                    experiences, regardless of our age.
+                    <p data-aos="fade-right" data-aos-delay="700">
+                        Magic is captivating and universally loved because it offers us these simple, yet enchanting
+                        experiences, regardless of our age.
+                    </p>
+
                 </ol>
             </div>
-            <div class="reason-img right">
+            <div class="reason-img right" data-aos="fade-left" data-aos-delay="100" data-aos-anchor="#aceTrigger">
                 <img src="assets/img/spades.png" alt="spades">
             </div>
 
@@ -91,8 +103,8 @@
     <hr>
 
     <section id="table">
-        <h1 class="text-center">Some techniques</h1>
-        <div class="table-container">
+        <h1 data-aos="zoom-in" data-aos-delay="100" data-aos-anchor="#tableTrigger" class="text-center">Some techniques</h1>
+        <div class="table-container" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000" data-aos-anchor="#tableTrigger">
             <table>
                 <tr>
                     <th>Technique</th>
@@ -106,7 +118,7 @@
                     <td>Beginner</td>
                     <td>Ambitious Card Routine, Two Card Monte</td>
                 </tr>
-                <tr>
+                <tr id="tableTrigger">
                     <td>Vanishing Coin</td>
                     <td>Coin Magic</td>
                     <td>Intermediate</td>
@@ -144,5 +156,13 @@
         </p>
     </footer>
 </body>
+
+<script>
+    AOS.init();
+    
+    AOS.init({
+        duration: 1000
+    });
+</script>
 
 </html>
