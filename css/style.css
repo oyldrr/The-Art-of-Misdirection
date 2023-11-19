@@ -82,6 +82,68 @@ section {
     color: #ffffff;
 }
 
+/* Sidenav */
+.sidenav {
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 0;
+
+    position: fixed;
+    z-index: 1001;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.  5s;
+    border-radius: 15px;
+}
+
+/* Sidenav links */
+.sidenav a {
+    text-align: center;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #040D21;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a span i {
+    margin-right: 1rem;
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #fab710;
+}
+
+/* Sidenav turn off button */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Sidenav turn on button */
+.openNav {
+    padding: 0 .5rem;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+    color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+
+    display: none;
+}
+
 /* Index Page */
 .introduction {
     margin-top: -1rem;
@@ -101,6 +163,7 @@ section {
     padding-left: 3rem;
     padding-bottom: 5rem;
 
+    z-index: -1;
 }
 
 .introduction * {
@@ -144,8 +207,10 @@ section {
 }
 
 .table-container {
+    width: 80%;
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 th {
@@ -335,10 +400,6 @@ td {
     color: #EEEEEE;
 }
 
-.goTop:hover {
-    bottom: 1.5rem;
-    opacity: .7;
-}
 
 /* Footer Styling */
 footer {
@@ -360,5 +421,17 @@ footer {
 @media screen and (max-width: 768px) {
     #table {
         display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar-logo {
+        margin: auto;
+    }
+
+    .openNav {
+        display: block;
     }
 }

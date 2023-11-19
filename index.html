@@ -22,13 +22,62 @@
                 <a class="nav-logo" href=""><img src="assets/img/logo-with-text.png" alt="TheArtOfMisdirection"></a>
             </div>
 
+            <!-- Desktop -->
             <div class="nav-links">
                 <a data-aos="fade-in" data-aos-delay="100" class="nav-link active" href="index.html">Home</a>
                 <a data-aos="fade-in" data-aos-delay="200" class="nav-link" href="history.html">History</a>
                 <a data-aos="fade-in" data-aos-delay="300" class="nav-link" href="legends.html">Legends</a>
                 <a data-aos="fade-in" data-aos-delay="400" class="nav-link" href="contact.html">Contact</a>
             </div>
+
+
+
+            <!-- Mobile -->
+            <div class="openNav-container">
+                <!-- Navbar turn on button -->
+                <span class="openNav" onclick="openNav()">&#9776;</span>
+                <!-- Navbar turn on button -->
+            </div>
+    
+
+            <div id="mySidenav" class="sidenav">
+                <!-- Navbar turn off button -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- Navbar turn off button -->
+        
+                <!-- Navbar links -->
+                <a href="find-reservation.php"><span>
+                        <i class="fas fa-magnifying-glass"></i>
+                        Find reservation
+                    </span></a>
+                <a href="about-us.php"><span>
+                        <i class="fas fa-info-circle"></i>
+                        About us
+                    </span></a>
+                <a href="contact-us.php"><span>
+                        <i class="fas fa-phone"></i>
+                        Contact us
+                    </span></a>
+                <a href="help-center.php">
+                    <i class="fas fa-comment"></i>
+                    <span>Help center</span>
+                </a>
+                <a href="rental-terms.php"><span>
+                        <i class="fas fa-file"></i>
+                        Rental terms
+                    </span></a>
+                <a href="faq.php"><span>
+                        <i class="fas fa-question-circle"></i>
+                        FAQ
+                    </span></a>
+                <a href="languages.php"><span>
+                        <i class="fas fa-language"></i>
+                        Languages
+                    </span></a>
+                <!-- Navbar links -->
+            </div>
         </nav>
+        
     </header>
 
     <section id="introduction">
@@ -100,6 +149,7 @@
         </div>
     </section>
 
+    <div id="goTopTrigger"></div>
     <hr>
 
     <section id="table">
@@ -140,7 +190,7 @@
         </div>
     </section>
 
-    <div class="goTop right">
+    <div class="goTop right" data-aos-anchor="#goTopTrigger" data-aos="fade-up">
         <a href="#">^</a>
     </div>
 
