@@ -184,7 +184,7 @@ section {
 }
 
 .greetingButton {
-    width: 20%;
+    width: 10%;
     min-width: fit-content;
     margin-top: 1rem;
     padding: .3rem;
@@ -197,12 +197,15 @@ section {
     color: #ffffff;
     cursor: pointer;
     border-radius: 15px;
+}
 
+.greetingButton span {
+    
     letter-spacing: 2px;
     transition: all ease-in-out .3s;
 }
 
-.greetingButton:hover {
+.greetingButton span:hover {
     opacity: .7;
     letter-spacing: 1px;
 }
