@@ -1,7 +1,7 @@
 ## Introduction
 
 "The Art Of Misdirection" is a website designed to showcase my exploration and implementation of web services design concepts learned during my Erasmus exchange program.
-You can check the result from [here](https://oyldrr.github.io/The-Art-of-Misdirection/).
+You can check the result from [here](https://oyldrr.github.io/The-Art-of-Misdirection/ "Github Pages Website").
 
 ## Features
 
