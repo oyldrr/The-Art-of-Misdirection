@@ -6,6 +6,12 @@
 
 - **Pure HTML and CSS:** The website is crafted using fundamental HTML and CSS knowledge, keeping it lightweight and accessible.
 - **AOS Library Integration:** Utilizing the AOS library for smooth and engaging animations, adding a touch of magic to the user experience.
+- **Responsive Design:** Implementing responsive web design principles to ensure optimal viewing and interaction across a wide range of devices.
+
+  
+## Thanks
+
+- Special thanks to Monika Kosowska.
 
 ## Screenshots
 ![Ekran görüntüsü 2023-11-21 133307](https://github.com/oyldrr/The-Art-of-Misdirection/assets/84236077/775ffaf8-76b8-4c88-b4c3-603b1b22cb7d)
@@ -14,6 +20,3 @@
 ![Ekran görüntüsü 2023-11-21 133404](https://github.com/oyldrr/The-Art-of-Misdirection/assets/84236077/c32afde6-df49-48e5-88db-824ee92aa300)
 
 
-## Thanks
-
-- Special thanks to Monika Kosowska.
