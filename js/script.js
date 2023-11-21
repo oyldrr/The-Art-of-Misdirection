@@ -9,11 +9,20 @@ function greetGuest() {
   }
 }
 
+isOpened = false;
+
 // Navbar turn on and turn off funcionality
 function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-}
+  if (isOpened == false) {
+    document.getElementById("mySidenav").style.height = "100%";
+    document.getElementById("mySidenav").style.opacity = "1";
+    isOpened = true;
+  }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0"; !important
+  else {
+    document.getElementById("mySidenav").style.height = "0";
+    document.getElementById("mySidenav").style.opacity = "0";
+
+    isOpened = false;
+  }
 }

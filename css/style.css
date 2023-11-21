@@ -38,7 +38,7 @@ section {
 
 /* Navbar Styling */
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: #222831;
     width: 100%;
@@ -46,13 +46,14 @@ section {
     min-height: 75px;
     border-radius: 0px 0px 15px 15px;
     display: flex;
-    justify-content: space-between;
+    z-index: 1001;
+
 }
 
 .navbar-logo {
-    justify-content: left;
-
-    margin-left: 1rem;
+    width: fit-content;
+    margin-top: .5rem;
+    margin-left: 2rem;
 }
 
 .nav-logo img {
@@ -60,8 +61,9 @@ section {
 }
 
 .nav-links {
-    justify-content: right;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    position: absolute;
+    right: 2rem;
 }
 
 .nav-link {
@@ -69,8 +71,8 @@ section {
     color: #c6c6c6;
     font-size: larger;
     font-weight: 600;
-    margin-right: 3rem;
     transition: ease-in-out all .1s;
+    margin-left: 2rem;
 }
 
 .active {
@@ -84,31 +86,43 @@ section {
 
 /* Sidenav */
 .sidenav {
-    top: 0;
     right: 0;
 
-    height: 100%;
-    width: 0;
+    height: 0%;
+    width: 100%;
 
     position: fixed;
-    z-index: 1001;
-    background-color: #f1f1f1;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.  5s;
-    border-radius: 15px;
+    z-index: 1000;
+
+    background-color: #222831;
+
+    overflow-y: hidden;
+
+    opacity: 0;
+
+    transition: all ease-in-out .3s;
+
 }
 
 /* Sidenav links */
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sidenav a {
+    width: fit-content;
     text-align: center;
-    margin-top: 1.5rem;
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
-    color: #040D21;
+    color: #c6c6c6;
+
     display: block;
-    transition: 0.3s
+    margin-top: 5rem;
+
+    transition: all ease-in-out .3s;
 }
 
 .sidenav a span i {
@@ -117,36 +131,39 @@ section {
 
 .sidenav a:hover,
 .offcanvas a:focus {
-    color: #fab710;
+    color: #ffffff;
 }
 
 /* Sidenav turn off button */
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
+    display: flex;
+    justify-content: end;
+    width: 80%;
     font-size: 36px;
     margin-left: 50px;
 }
 
 /* Sidenav turn on button */
 .openNav {
-    padding: 0 .5rem;
+    padding: .1rem .5rem;
 
     cursor: pointer;
 
     font-size: 24px;
 
-    color: #f1f1f1;
-    border: 1px solid #f1f1f1;
+    color: #c6c6c6;
+    border: 1px solid #c6c6c6;
     border-radius: 5px;
 
     display: none;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
 }
 
 /* Index Page */
 .introduction {
-    margin-top: -1rem;
+    margin-top: 3rem;
 
     background-image: url("../assets/img/introduction.jpg");
     filter: grayscale(50%) contrast(100%) invert(10%);
@@ -163,24 +180,24 @@ section {
     padding-left: 3rem;
     padding-bottom: 5rem;
 
-    z-index: -1;
-}
-
-.introduction * {
-    width: 80%;
+    font-size: normal;
 }
 
 .greetingButton {
-    width: 10%;
+    width: 20%;
+    min-width: fit-content;
     margin-top: 1rem;
     padding: .3rem;
+
     font-weight: thin;
     font-size: normal;
+
     border: none;
     background: #48abe0;
     color: #ffffff;
     cursor: pointer;
     border-radius: 15px;
+
     letter-spacing: 2px;
     transition: all ease-in-out .3s;
 }
@@ -235,6 +252,7 @@ td {
     padding: 3rem;
     width: 100%;
     margin: auto;
+    margin-top: 3rem;
     display: flex;
     justify-content: center;
 }
@@ -296,6 +314,7 @@ td {
     justify-content: center;
 
     margin: auto;
+    margin-top: 3rem;
 
     font-size: larger;
 
@@ -333,17 +352,22 @@ td {
 
 /* Legends Page */
 .legends-container {
-    margin-top: 5rem;
-    min-height: 60vh;
+    min-height: 81vh;
+}
+
+.legends-container h1 {
+    padding-top: 7.55rem;
 }
 
 .cards-container {
     width: 80%;
     padding-top: 3rem;
     margin: auto;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 3rem;
 }
 
 .card {
@@ -419,19 +443,96 @@ footer {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-    #table {
-        display: none;
+    body {
+        font-size: small;
     }
 
+    /* Navbar */
     .nav-links {
         display: none;
     }
 
     .navbar-logo {
-        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .navbar-logo img {
+        width: 225px;
     }
 
     .openNav {
         display: block;
+    }
+
+     /* Index Page */
+     .introduction {
+        padding: 1rem;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .reason {
+        display: block;
+        height: fit-content;
+    }
+
+    .reason-img {
+        margin-bottom: 1rem;
+    }
+
+    .reason-img img{
+        width: 75%;
+        margin: auto;
+    }
+
+    #table-hr {
+        display: none;
+    }
+
+    #table {
+        display: none;
+    }
+
+    /* History Page */
+    #introduction {
+        display: block;
+    }
+
+    .introduction-container{
+        margin-bottom: 3rem;
+    }
+
+    .timeline {
+        display: block;
+    }
+
+    .text-container {
+        margin-bottom: 1rem;
+    }
+
+    .image-container img{
+        width: 75%;
+    }
+
+    /* Contact Page */
+    #contact {
+        display: block;
+    }
+
+    .contact-container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* Navbar */
+    .navbar-logo {
+        justify-content: left;
+        margin-left: 1rem;
     }
 }

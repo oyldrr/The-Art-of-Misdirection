@@ -19,7 +19,8 @@
     <header>
         <nav class="navbar">
             <div data-aos="fade-in" class="navbar-logo">
-                <a class="nav-logo" href="index.html"><img src="assets/img/logo-with-text.png" alt="TheArtOfMisdirection"></a>
+                <a class="nav-logo" href="index.html"><img src="assets/img/logo-with-text.png"
+                        alt="TheArtOfMisdirection"></a>
             </div>
 
             <div class="nav-links">
@@ -28,7 +29,31 @@
                 <a data-aos="fade-in" data-aos-delay="300" class="nav-link active" href="legends.html">Legends</a>
                 <a data-aos="fade-in" data-aos-delay="400" class="nav-link" href="contact.html">Contact</a>
             </div>
+            <!-- Mobile -->
+            <div class="openNav-container">
+                <!-- Navbar turn on button -->
+                <span class="openNav" onclick="openNav()">&#9776;</span>
+                <!-- Navbar turn on button -->
+            </div>
         </nav>
+
+        <div id="mySidenav" class="sidenav">
+
+            <!-- Navbar links -->
+            <a data-aos="fade-in" data-aos-delay="100" href="index.html">
+                    Home
+            </a>
+            <a data-aos="fade-in" data-aos-delay="200" href="history.html">
+                    History
+            </a>
+            <a data-aos="fade-in" data-aos-delay="300" href="legends.html">
+                    Legends
+            </a>
+            <a data-aos="fade-in" data-aos-delay="400" href="contact.html">
+                    Contact
+            </a>
+            <!-- Navbar links -->
+        </div>
     </header>
 
     <section id="legends">
@@ -87,7 +112,7 @@
 
 <script>
     AOS.init()
-    
+
     AOS.init({
         duration: 1000
     });

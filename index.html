@@ -38,46 +38,26 @@
                 <span class="openNav" onclick="openNav()">&#9776;</span>
                 <!-- Navbar turn on button -->
             </div>
-    
-
-            <div id="mySidenav" class="sidenav">
-                <!-- Navbar turn off button -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <!-- Navbar turn off button -->
-        
-                <!-- Navbar links -->
-                <a href="find-reservation.php"><span>
-                        <i class="fas fa-magnifying-glass"></i>
-                        Find reservation
-                    </span></a>
-                <a href="about-us.php"><span>
-                        <i class="fas fa-info-circle"></i>
-                        About us
-                    </span></a>
-                <a href="contact-us.php"><span>
-                        <i class="fas fa-phone"></i>
-                        Contact us
-                    </span></a>
-                <a href="help-center.php">
-                    <i class="fas fa-comment"></i>
-                    <span>Help center</span>
-                </a>
-                <a href="rental-terms.php"><span>
-                        <i class="fas fa-file"></i>
-                        Rental terms
-                    </span></a>
-                <a href="faq.php"><span>
-                        <i class="fas fa-question-circle"></i>
-                        FAQ
-                    </span></a>
-                <a href="languages.php"><span>
-                        <i class="fas fa-language"></i>
-                        Languages
-                    </span></a>
-                <!-- Navbar links -->
-            </div>
         </nav>
-        
+
+        <div id="mySidenav" class="sidenav">
+
+            <!-- Navbar links -->
+            <a class="active" data-aos="fade-in" data-aos-delay="100" href="index.html">
+                    Home
+            </a>
+            <a data-aos="fade-in" data-aos-delay="200" href="history.html">
+                    History
+            </a>
+            <a data-aos="fade-in" data-aos-delay="300" href="legends.html">
+                    Legends
+            </a>
+            <a data-aos="fade-in" data-aos-delay="400" href="contact.html">
+                    Contact
+            </a>
+            <!-- Navbar links -->
+        </div>
+
     </header>
 
     <section id="introduction">
@@ -107,6 +87,7 @@
     </section>
 
     <hr>
+    <div id="goTopTrigger"></div>
 
     <section id="reason">
         <div class="reason">
@@ -142,19 +123,20 @@
 
                 </ol>
             </div>
-            <div class="reason-img right" data-aos="fade-left" data-aos-delay="100" data-aos-anchor="#aceTrigger">
+            <div class="reason-img right" data-aos="flip-left" data-aos-delay="100" data-aos-anchor="#aceTrigger">
                 <img src="assets/img/spades.png" alt="spades">
             </div>
 
         </div>
     </section>
 
-    <div id="goTopTrigger"></div>
-    <hr>
+    <hr id="table-hr">
 
     <section id="table">
-        <h1 data-aos="zoom-in" data-aos-delay="100" data-aos-anchor="#tableTrigger" class="text-center">Some techniques</h1>
-        <div class="table-container" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000" data-aos-anchor="#tableTrigger">
+        <h1 data-aos="zoom-in" data-aos-delay="100" data-aos-anchor="#tableTrigger" class="text-center">Some techniques
+        </h1>
+        <div class="table-container" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000"
+            data-aos-anchor="#tableTrigger">
             <table>
                 <tr>
                     <th>Technique</th>
@@ -195,7 +177,7 @@
     </div>
 
     <br>
-    <hr>
+    <hr id="table-hr">
 
     <footer>
 
@@ -209,7 +191,7 @@
 
 <script>
     AOS.init();
-    
+
     AOS.init({
         duration: 1000
     });

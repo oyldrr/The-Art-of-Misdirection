@@ -30,7 +30,31 @@
                 <a data-aos="fade-in" data-aos-delay="300" class="nav-link" href="legends.html">Legends</a>
                 <a data-aos="fade-in" data-aos-delay="400" class="nav-link active" href="contact.html">Contact</a>
             </div>
+            <!-- Mobile -->
+            <div class="openNav-container">
+                <!-- Navbar turn on button -->
+                <span class="openNav" onclick="openNav()">&#9776;</span>
+                <!-- Navbar turn on button -->
+            </div>
         </nav>
+
+        <div id="mySidenav" class="sidenav">
+
+            <!-- Navbar links -->
+            <a data-aos="fade-in" data-aos-delay="100" href="index.html">
+                    Home
+            </a>
+            <a data-aos="fade-in" data-aos-delay="200" href="history.html">
+                    History
+            </a>
+            <a data-aos="fade-in" data-aos-delay="300" href="legends.html">
+                    Legends
+            </a>
+            <a data-aos="fade-in" data-aos-delay="400" href="contact.html">
+                    Contact
+            </a>
+            <!-- Navbar links -->
+        </div>
     </header>
 
     <section id="contact">
@@ -63,7 +87,7 @@
     <div id="goTopTrigger"></div>
 
     <section id="form">
-        <div class="form-container">
+        <div class="form-container" data-aos="fade-in">
             <form>
                 <label data-aos="flip-up" for="name">Name:</label>
                 <input data-aos="flip-up" data-aos-delay="100" type="text" id="name" name="name" required>
