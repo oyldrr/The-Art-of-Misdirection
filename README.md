@@ -4,7 +4,7 @@
 
 ## Features
 
-- **Pure HTML and CSS:** The website is crafted using fundamental HTML and CSS knowledge, keeping it lightweight and accessible.
+- **Pure HTML CSS & JS:** The website is crafted using fundamental HTML, CSS & JS knowledge, keeping it lightweight and accessible.
 - **AOS Library Integration:** Utilizing the AOS library for smooth and engaging animations, adding a touch of magic to the user experience.
 - **Responsive Design:** Implementing responsive web design principles to ensure optimal viewing and interaction across a wide range of devices.
 
